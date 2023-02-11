@@ -1,9 +1,12 @@
 """Инструменты для работы с базовой конфигурацией.
 """
+import os.path
+
 import tomli
 
 from smart_greed import interfaces
 
+BASE_DIRECTORY = 'smart_greed'
 CONFIG_FILENAME = 'config.toml'
 
 
@@ -22,7 +25,9 @@ def get_base_config() -> interfaces.BaseConfig:
         'moex_to_console': {}
     }
     """
-    with open(CONFIG_FILENAME, mode='rb') as fp:
+    path = os.path.join(BASE_DIRECTORY, CONFIG_FILENAME)
+
+    with open(path, mode='rb') as fp:
         config = tomli.load(fp)
 
     return interfaces.BaseConfig(config)
