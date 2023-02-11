@@ -1,3 +1,6 @@
+# не надо добавлять в репозиторий результаты сканирования
+data/*
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

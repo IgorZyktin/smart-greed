@@ -8,9 +8,12 @@ packages = [{include = "smart_greed"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
-pytest = "^7.2.1"
 requests = "^2.28.2"
+pydantic = "^1.10.4"
 
+[tool.poetry.group.dev.dependencies]
+coverage = "^7.1.0"
+pytest = "^7.2.1"
 
 [build-system]
 requires = ["poetry-core"]

@@ -1,0 +1,7 @@
+[user]
+scanner_type = "moex_using_requests"
+presenter_type = "moex_to_console"
+
+[moex_using_requests]
+
+[moex_to_console]
