@@ -1,4 +1,5 @@
 # не надо добавлять в репозиторий результаты сканирования
+smart_greed/data/*
 data/*
 
 # Byte-compiled / optimized / DLL files
